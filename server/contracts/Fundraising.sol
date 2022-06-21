@@ -1,7 +1,7 @@
 contract Fundraising {
     uint256 public targetAmount;
     address public owner;
-    mappint(address => uint256) public donations;
+    mapping(address => uint256) public donations;
 
     uint256 public raisedAmount = 0;
     uint256 public finishTime = block.timestamp + 2 weeks;
